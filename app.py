@@ -125,7 +125,7 @@ st.markdown(f"**Progress: {checked_items}/{total_items} items completed**")
 # Reset button
 if st.button("Reset Checklist"):
     st.session_state.checkboxes = {key: False for key in st.session_state.checkboxes}
-    st.experimental_rerun()
+    st.rerun()
 
 # Footer
 st.markdown("---")
